@@ -1,5 +1,5 @@
 from collections import Sequence
-from errors import CircularList
+from .errors import CircularList
 
 
 class Atom(object):

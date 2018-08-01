@@ -1,8 +1,8 @@
 from .base import define_built_in
-from utils import check_argument_number
+from ..utils import check_argument_number
 
-from data_types import (Cons, Atom, Boolean, Number)
-from errors import SchemeTypeError
+from ..data_types import (Cons, Atom, Boolean, Number)
+from ..errors import SchemeTypeError
 
 
 @define_built_in('eq?')

@@ -1,9 +1,9 @@
 import ply.yacc
 
-from lexer import tokens
-from data_types import (Cons, Nil, Symbol, Integer, FloatingPoint, Boolean,
+from .lexer import tokens
+from .data_types import (Cons, Nil, Symbol, Integer, FloatingPoint, Boolean,
                         Character, String)
-from errors import SchemeSyntaxError
+from .errors import SchemeSyntaxError
 
 """Grammar for our minimal scheme:
 

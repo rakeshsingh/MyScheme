@@ -167,3 +167,34 @@ Comments work too!
 
 There's also a skeleton compiler here, this is based on the paper
 [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf).
+
+# Code Organization
+
+├── README.md
+├── examples
+│   └── hello-world.scm
+├── interpreter
+│   ├── built_ins
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   ├── chars.py
+│   │   ├── control.py
+│   │   ├── equivalence.py
+│   │   ├── io.py
+│   │   ├── lists.py
+│   │   ├── numbers.py
+│   │   ├── strings.py
+│   │   └── vectors.py
+│   ├── data_types.py
+│   ├── errors.py
+│   ├── evaluator.py
+│   ├── lexer.py
+│   ├── main.py
+│   ├── primitives.py
+│   ├── scheme_parser.py
+│   ├── tests.py
+│   └── utils.py
+├── repl
+├── requirements.txt
+└── standard_library
+    └── library.scm

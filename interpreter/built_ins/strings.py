@@ -1,8 +1,8 @@
 from .base import define_built_in
-from utils import check_argument_number
+from ..utils import check_argument_number
 
-from data_types import (Boolean, Character, String, Integer)
-from errors import SchemeTypeError, InvalidArgument
+from ..data_types import (Boolean, Character, String, Integer)
+from ..errors import SchemeTypeError, InvalidArgument
 
 
 @define_built_in('string?')

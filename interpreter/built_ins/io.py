@@ -1,5 +1,5 @@
 from .base import define_built_in
-from utils import check_argument_number
+from ..utils import check_argument_number
 
 
 @define_built_in('display')

@@ -1,6 +1,6 @@
 from .base import define_built_in
-from utils import check_argument_number
-from data_types import Vector, Boolean, Nil, Integer
+from ..utils import check_argument_number
+from ..data_types import Vector, Boolean, Nil, Integer
 
 
 @define_built_in('vector?')

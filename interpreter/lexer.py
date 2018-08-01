@@ -1,5 +1,5 @@
 import ply.lex
-from errors import SchemeSyntaxError
+from .errors import SchemeSyntaxError
 
 tokens = ('LPAREN', 'RPAREN', 'SYMBOL', 'INTEGER', 'BOOLEAN', 'FLOATING_POINT',
           'CHARACTER', 'STRING', 'QUOTESUGAR', 'QUASIQUOTESUGAR',

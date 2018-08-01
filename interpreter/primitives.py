@@ -1,9 +1,9 @@
-from evaluator import eval_s_expression
-from errors import (SchemeTypeError, RedefinedVariable, SchemeSyntaxError, UndefinedVariable,
+from .evaluator import eval_s_expression
+from .errors import (SchemeTypeError, RedefinedVariable, SchemeSyntaxError, UndefinedVariable,
                     SchemeArityError)
-from data_types import Nil, Cons, Atom, Symbol, Boolean, UserFunction, LambdaFunction
+from .data_types import Nil, Cons, Atom, Symbol, Boolean, UserFunction, LambdaFunction
 from copy import deepcopy
-from utils import check_argument_number
+from .utils import check_argument_number
 
 primitives = {}
 

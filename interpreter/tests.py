@@ -4,10 +4,10 @@ import unittest
 import sys
 from io import StringIO
 
-from evaluator import eval_program, load_standard_library, load_built_ins
-from errors import (SchemeTypeError, SchemeStackOverflow, SchemeSyntaxError,
+from .evaluator import eval_program, load_standard_library, load_built_ins
+from .errors import (SchemeTypeError, SchemeStackOverflow, SchemeSyntaxError,
                     SchemeArityError)
-from data_types import (Vector, Cons, Nil, Integer, Boolean, String,
+from .data_types import (Vector, Cons, Nil, Integer, Boolean, String,
                         Character, FloatingPoint)
 
 

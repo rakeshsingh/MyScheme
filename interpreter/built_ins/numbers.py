@@ -2,9 +2,9 @@ import math
 from copy import copy
 
 from .base import define_built_in
-from utils import check_argument_number
-from data_types import (Boolean, Number, Integer, FloatingPoint)
-from errors import SchemeTypeError
+from ..utils import check_argument_number
+from ..data_types import (Boolean, Number, Integer, FloatingPoint)
+from ..errors import SchemeTypeError
 
 
 @define_built_in('rational?')

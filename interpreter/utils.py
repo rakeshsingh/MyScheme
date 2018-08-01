@@ -1,4 +1,4 @@
-from errors import SchemeArityError
+from .errors import SchemeArityError
 
 def check_argument_number(function_name, given_arguments,
                           min_arguments, max_arguments=None):

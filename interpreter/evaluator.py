@@ -1,8 +1,8 @@
-from scheme_parser import parser
-from data_types import Atom, Symbol, BuiltInFunction
-from errors import (UndefinedVariable, SchemeTypeError, SchemeStackOverflow,
+from .scheme_parser import parser
+from .data_types import Atom, Symbol, BuiltInFunction
+from .errors import (UndefinedVariable, SchemeTypeError, SchemeStackOverflow,
                     SchemeSyntaxError)
-from built_ins import built_ins
+from .built_ins import built_ins
 from copy import deepcopy
 
 def load_built_ins(environment):
@@ -108,4 +108,4 @@ def eval_symbol(symbol_string, environment):
         raise UndefinedVariable('%s has not been defined (environment: %s).' % (symbol_string, sorted(environment.keys())))
 
 # this import has to be after eval_s_expression to avoid circular import issues
-from primitives import primitives
+from .primitives import primitives
